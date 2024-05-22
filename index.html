@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+    <script src="check.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="signin">
+        <h2>Welcome to the Quiz</h2>
+        <form id="signinForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+            <input type="submit" value="Start Quiz">
+        </form>
+    </div>
+
+    <div class="quiz" style="display:none;">
+        <h2>HTML & CSS Quiz | By: Kanav Saddana</h2>
+
+        <form id="quizForm">
+            <div class="page" id="page1">
+                <!-- Questions 1 to 4 -->
+                <div class="question">
+                    <h3>What does HTML stand for?</h3>
+                    <input type="radio" name="Q1" class="answers" value="t" required><span>Hyper Text Markup Language</span><br>
+                    <input type="radio" name="Q1" class="answers" value="f" required><span>Hyperlink and Text Markup Language</span><br>
+                    <input type="radio" name="Q1" class="answers" value="f" required><span>High Tech Markup Language</span><br>
+                    <input type="radio" name="Q1" class="answers" value="f" required><span>Home Tool Markup Language</span><br>
+                </div>
+                <div class="question">
+                    <h3>Which tag is used to define an unordered list in HTML?</h3>
+                    <input type="radio" name="Q2" class="answers" value="t" required><span>&lt;ul&gt;</span><br>
+                    <input type="radio" name="Q2" class="answers" value="f" required><span>&lt;ol&gt;</span><br>
+                    <input type="radio" name="Q2" class="answers" value="f" required><span>&lt;li&gt;</span><br>
+                    <input type="radio" name="Q2" class="answers" value="f" required><span>&lt;list&gt;</span><br>
+                </div>
+                <div class="question">
+                    <h3>Which property is used to change the text color in CSS?</h3>
+                    <input type="radio" name="Q3" class="answers" value="t" required><span>color</span><br>
+                    <input type="radio" name="Q3" class="answers" value="f" required><span>text-color</span><br>
+                    <input type="radio" name="Q3" class="answers" value="f" required><span>font-color</span><br>
+                    <input type="radio" name="Q3" class="answers" value="f" required><span>text-style</span><br>
+                </div>
+                <div class="question">
+                    <h3>What is the correct HTML element for inserting a line break?</h3>
+                    <input type="radio" name="Q4" class="answers" value="f" required><span>&lt;lb&gt;</span><br>
+                    <input type="radio" name="Q4" class="answers" value="f" required><span>&lt;break&gt;</span><br>
+                    <input type="radio" name="Q4" class="answers" value="t" required><span>&lt;br&gt;</span><br>
+                    <input type="radio" name="Q4" class="answers" value="f" required><span>&lt;line&gt;</span><br>
+                </div>
+            </div>
+
+            <div class="page" id="page2">
+                <!-- Questions 5 to 8 -->
+                <div class="question">
+                    <h3>Which CSS property is used to change the font size of an element?</h3>
+                    <input type="radio" name="Q5" class="answers" value="t" required><span>font-size</span><br>
+                    <input type="radio" name="Q5" class="answers" value="f" required><span>text-size</span><br>
+                    <input type="radio" name="Q5" class="answers" value="f" required><span>size</span><br>
+                    <input type="radio" name="Q5" class="answers" value="f" required><span>font-style</span><br>
+                </div>
+                <div class="question">
+                    <h3>What is the correct HTML for creating a hyperlink?</h3>
+                    <input type="radio" name="Q6" class="answers" value="f" required><span>&lt;link&gt;</span><br>
+                    <input type="radio" name="Q6" class="answers" value="t" required><span>&lt;a&gt;</span><br>
+                    <input type="radio" name="Q6" class="answers" value="f" required><span>&lt;rel&gt;</span><br>
+                    <input type="radio" name="Q6" class="answers" value="f" required><span>&lt;hyperlink&gt;</span><br>
+                </div>
+                <div class="question">
+                    <h3>How do you add comments in HTML?</h3>
+                    <input type="radio" name="Q7" class="answers" value="t" required><span>&lt;!--This is a comment--&gt;</span><br>
+                    <input type="radio" name="Q7" class="answers" value="f" required><span>//This is a comment//</span><br>
+                    <input type="radio" name="Q7" class="answers" value="f" required><span>/This is a comment/</span><br>
+                    <input type="radio" name="Q7" class="answers" value="f" required><span>//This is a comment</span><br>
+                </div>
+                <div class="question">
+                    <h3>Which property is used to change the background color of an element in CSS?</h3>
+                    <input type="radio" name="Q8" class="answers" value="t" required><span>background-color</span><br>
+                    <input type="radio" name="Q8" class="answers" value="f" required><span>color-background</span><br>
+                    <input type="radio" name="Q8" class="answers" value="f" required><span>bg-color</span><br>
+                    <input type="radio" name="Q8" class="answers" value="f" required><span>background</span><br>
+                </div>
+            </div>
+
+            <div class="page" id="page3">
+                <!-- Questions 9 to 12 -->
+                <div class="question">
+                    <h3>What does CSS stand for?</h3>
+                    <input type="radio" name="Q9" class="answers" value="t" required><span>Cascading Style Sheets</span><br>
+                    <input type="radio" name="Q9" class="answers" value="f" required><span>Computer Style Sheets</span><br>
+                    <input type="radio" name="Q9" class="answers" value="f" required><span>Creative Style Sheets</span><br>
+                    <input type="radio" name="Q9" class="answers" value="f" required><span>Colorful Style Sheets</span><br>
+                </div>
+                <div class="question">
+                    <h3>Which tag is used to define the header for a webpage or section in HTML?</h3>
+                    <input type="radio" name="Q10" class="answers" value="f" required><span>&lt;header&gt;</span><br>
+                    <input type="radio" name="Q10" class="answers" value="f" required><span>&lt;head&gt;</span><br>
+                    <input type="radio" name="Q10" class="answers" value="t" required><span>&lt;h1&gt;</span><br>
+                    <input type="radio" name="Q10" class="answers" value="f" required><span>&lt;heading&gt;</span><br>
+                </div>
+                <div class="question">
+                    <h3>How can you make a list that lists its items with numbers in HTML?</h3>
+                    <input type="radio" name="Q11" class="answers" value="t" required><span>&lt;ol&gt;</span><br>
+                    <input type="radio" name="Q11" class="answers" value="f" required><span>&lt;ul&gt;</span><br>
+                    <input type="radio" name="Q11" class="answers" value="f" required><span>&lt;list&gt;</span><br>
+                    <input type="radio" name="Q11" class="answers" value="f" required><span>&lt;li&gt;</span><br>
+                </div>
+                <div class="question">
+                    <h3>Which CSS property is used to specify the space between lines of text?</h3>
+                    <input type="radio" name="Q12" class="answers" value="t" required><span>line-height</span><br>
+                    <input type="radio" name="Q12" class="answers" value="f" required><span>line-spacing</span><br>
+                    <input type="radio" name="Q12" class="answers" value="f" required><span>spacing</span><br>
+                    <input type="radio" name="Q12" class="answers" value="f" required><span>text-spacing</span><br>
+                </div>
+            </div>
+
+            <div class="page" id="page4">
+    
+                <div class="question">
+                    <h3>Which tag is used to define an image in HTML?</h3>
+                    <input type="radio" name="Q13" class="answers" value="t" required><span>&lt;img&gt;</span><br>
+                    <input type="radio" name="Q13" class="answers" value="f" required><span>&lt;image&gt;</span><br>
+                    <input type="radio" name="Q13" class="answers" value="f" required><span>&lt;picture&gt;</span><br>
+                    <input type="radio" name="Q13" class="answers" value="f" required><span>&lt;frame&gt;</span><br>
+                </div>
+    
+                <div class="question">
+                    <h3>What is the correct HTML for creating a checkbox?</h3>
+                    <input type="radio" name="Q14" class="answers" value="t" required><span>&lt;input type="checkbox"&gt;</span><br>
+                    <input type="radio" name="Q14" class="answers" value="f" required><span>&lt;checkbox&gt;</span><br>
+                    <input type="radio" name="Q14" class="answers" value="f" required><span>&lt;check&gt;</span><br>
+                    <input type="radio" name="Q14" class="answers" value="f" required><span>&lt;input type="check"&gt;</span><br>
+                </div>
+    
+                <div class="question">
+                    <h3>Which CSS property is used to change the size of an element relative to its parent?</h3>
+                    <input type="radio" name="Q15" class="answers" value="f" required><span>width</span><br>
+                    <input type="radio" name="Q15" class="answers" value="f" required><span>height</span><br>
+                    <input type="radio" name="Q15" class="answers" value="t" required><span>flex</span><br>
+                    <input type="radio" name="Q15" class="answers" value="f" required><span>em</span><br>
+                </div>
+    
+                <div class="question">
+                    <h3>How do you center-align text in CSS?</h3>
+                    <input type="radio" name="Q16" class="answers" value="t" required><span>text-align: center;</span><br>
+                    <input type="radio" name="Q16" class="answers" value="f" required><span>align: center;</span><br>
+                    <input type="radio" name="Q16" class="answers" value="f" required><span>center-text: true;</span><br>
+                    <input type="radio" name="Q16" class="answers" value="f" required><span>text-center: true;</span><br>
+                </div>
+            </div>
+
+            <div class="page" id="page5">
+            <div class="question">
+                <h3>What is the correct HTML for creating a table?</h3>
+                <input type="radio" name="Q17" class="answers" value="t" required><span>&lt;table&gt;</span><br>
+                <input type="radio" name="Q17" class="answers" value="f" required><span>&lt;tab&gt;</span><br>
+                <input type="radio" name="Q17" class="answers" value="f" required><span>&lt; tbl&gt;</span><br>
+                <input type="radio" name="Q17" class="answers" value="f" required><span>&lt;tb&gt;</span><br>
+            </div>
+
+            <div class="question">
+                <h3>Which CSS property is used to add shadow to text?</h3>
+                <input type="radio" name="Q18" class="answers" value="t" required><span>text-shadow</span><br>
+                <input type="radio" name="Q18" class="answers" value="f" required><span>shadow</span><br>
+                <input type="radio" name="Q18" class="answers" value="f" required><span>text-effect</span><br>
+                <input type="radio" name="Q18" class="answers" value="f" required><span>font-shadow</span><br>
+            </div>
+
+            <div class="question">
+                <h3>What is the correct HTML for inserting an image?</h3>
+                <input type="radio" name="Q19" class="answers" value="t" required><span>&lt;img src="image.jpg" alt="MyImage"&gt;</span><br>
+                <input type="radio" name="Q19" class="answers" value="f" required><span>&lt;image src="image.jpg" alt="MyImage"&gt;</span><br>
+                <input type="radio" name="Q19" class="answers" value="f" required><span>&lt;img alt="MyImage"&gt;</span><br>
+                <input type="radio" name="Q19" class="answers" value="f" required><span>&lt;img href="image.jpg" alt="MyImage"&gt;</span><br>
+            </div>
+
+            <div class="question">
+                <h3>How do you add padding to all sides of an element in CSS?</h3>
+                <input type="radio" name="Q20" class="answers" value="t" required><span>padding: 10px;</span><br>
+                <input type="radio" name="Q20" class="answers" value="f" required><span>padding 10px</span><br>
+                <input type="radio" name="Q20" class="answers" value="f" required><span>padding-all: 10px;</span><br>
+                <input type="radio" name="Q20" class="answers" value="f" required><span>padding-sides: 10px;</span><br>
+            </div>
+            </div>
+            
+            <div class="navigation">
+                <input type="button" id="prevBtn" value="Previous">
+                <input type="button" id="nextBtn" value="Next">
+                <input type="button" id="submitBtn" value="Submit" style="display: none;">
+            </div>
+
+            <label id="msg1"></label>
+            <label id="score"></label>
+        </form>
+    </div>
+</body>
+</html>
